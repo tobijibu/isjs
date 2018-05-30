@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>dayLightSavingTime() | is.js - にほんご。</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="dayLightSavingTime() | is.js - にほんご。">
+    <meta property="og:url">
+    <meta property="og:type" content="article">
+    <link rel="icon" href="https://tr.you84815.space/isjs/favicon.ico">
+    <style>html{overflow-y:scroll;font-size:16px}body{font-family:"游ゴシック Medium","Yu Gothic Medium",YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ',Meiryo,sans-serif;font-feature-settings:"palt";letter-spacing:.8pt;word-wrap:break-word;line-height:1.6;margin:.4em;padding:0;color:#000;text-shadow:0 0 0 #000}.wrapper{display:flex;flex-direction:row;justify-content:center}code{background-color:#f0f0f0;margin:0 2px;padding:2px 4px;font-size:.8em;font-family:Consolas,Monaco,"游ゴシック Medium","Yu Gothic Medium",YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ',Meiryo,monospace}pre{border:1px solid #ededed;color:#333;overflow-x:auto;margin:.8em 0 0;line-height:1.4;letter-spacing:normal}pre>code{background-color:transparent;font-size:.8rem}blockquote{color:#666;margin-left:0;padding-left:1em;border-left:2px solid #ededed;font-size:.8rem}p.note{font-size:.72rem}.main span.args,.main span.type,p.note,sup.note{color:#666}p{margin:.4em 0}dd{margin-left:1em}ul{padding-left:1.6em}ul.none{list-style-type:none}ul.disc{list-style-type:disc}ul.num{list-style-type:decimal}.my-table,.my-table td{border:1px solid #e0e0e0}.my-table{border-collapse:collapse;width:100%}.my-table th{border:1px solid #333;vertical-align:top;background-color:#333;color:#fff}.my-table td{vertical-align:top;padding:16px 8px;word-wrap:break-word}header{display:flex;align-items:center;height:2.4em;margin:8px}.navi_toggle{font-size:.8rem;width:1.6em;padding-top:.4em;display:none;position:relative}.navi li:hover,.navi_toggle:hover{cursor:pointer}.icon svg,.navi_toggle svg{position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:2em}#menu_close,.navi .hidden{display:none}.icon{width:32px;height:32px;display:block;position:relative}.icon svg{width:16px;height:16px}.title{font-size:.8rem;padding:1.2em 1em 1em}.main a,.navi a,.title a{color:#000;text-decoration:none}.navi{display:block;width:240px;margin:3.2em 16px 0}.navi .s-title{font-size:.72rem;color:#666}.navi ul{margin:0;padding:0;list-style-type:none}.navi li{font-size:1rem;text-shadow:none;margin:.64em 0}.navi li li,.navi li li li{font-size:.8rem;text-shadow:none;margin:.48em .48em .48em .56em}.navi li li li{text-shadow:0 0 0 #000;margin:.48em .48em .48em .96em;font-weight:400}.main a,.navi a{transition:.4s;border-bottom:1px #fff solid}.navi a:hover{transition:.4s;border-bottom:1px #666 solid}.navi a.active,.navi li,.navi li li{font-weight:700}.navi a.active::before{content:'\bb \20 ';font-size:.8em;margin-left:-.96em}.navi hr{border-top:1px dotted #aaa;width:100%;margin:2.4em 0}#navi_source{margin-top:1em}#navi_source a{margin-left:2.4em;font-weight:400}#navi_source a:hover{border-bottom:1px solid #fff}#navi_source svg,.share_link svg{width:1.72em}.main{width:800px;font-size:.88rem;line-height:2;margin:0 16px}.main a{color:#333;border-bottom:1px solid #ddd;padding-bottom:.24em;transition:.3s}.main a:hover,.main a:visited:hover{text-decoration:none;transition:.3s;border-bottom:1px solid #666}.main h1,.main h2{margin-bottom:.8em;font-weight:400}.main h1{margin-top:1.6em;font-size:2rem}.main h2{font-size:1.44rem}.main h3,.main h4,.main h5{margin-top:1.6em;margin-bottom:.4em;font-size:1rem}.main h4,.main h5{font-size:.72rem}.main h5{margin-top:1.2em;margin-bottom:.2em;color:#666}.main h6{margin-top:2em;margin-bottom:.8em;font-size:.64rem;text-decoration:underline}.license,footer{line-height:1.6;font-size:.72rem;text-align:right}.license,.main h2{margin-top:4em}footer{height:2em}footer span{background-color:rgba(255,255,255,.6);padding:4px;position:fixed;bottom:4px;right:8px}.share_link{text-align:right;margin-top:32px}.share_link a{width:40px;text-shadow:none;margin-left:16px;color:#aaa;border-bottom:0}div.share_link a:hover,div.share_link a:visited:hover{color:#000;border-bottom:0}a.i-hatena{position:relative}a.i-hatena>span{position:absolute;left:.25em;font-family:Verdana;font-weight:700;color:#fff;font-style:normal}@media screen and (max-width:1040px){html{font-size:14px}.navi_toggle,.wrapper{display:block}.navi_toggle{width:32px;height:32px}.icon{display:none}.title{font-size:12.8px}.navi{display:none;width:96%;font-size:16px;margin-top:16px;position:absolute;top:1.6em;background-color:rgba(255,255,255,.9);z-index:1}.navi li{font-size:1.2em;margin:.8em 0}.navi li li,.navi li li li{font-size:.8em;margin:1em 0 0 1em}.show{display:block}.main{width:auto}}.cse .gsc-control-cse,div.gsc-control-cse{border:0;padding:0}div.gsc-input-box{border:0;border-bottom:1px solid #000}form.gsc-search-box-tools .gsc-search-box td.gsc-input{padding-right:0}div.gsc-input-box-hover,div.gsc-search-box td.gsc-input>input:hover{border:0;border-bottom:1px solid #333;border-top-color:#fff;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}div.gsc-input-box-focus,div.gsc-search-box td.gsc-input>input:focus{border:0;border-bottom:1px solid #333;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}td.gsib_a{padding-top:2px}a.gsst_a span.gscb_a,a.gsst_a:hover span.gscb_a{color:#aaa}a.gsst_a,a.gsst_a:hover{border-bottom:0}button.gsc-search-button{margin-left:0}.cse .gsc-search-button button.gsc-search-button-v2,button.gsc-search-button-v2{padding:6px}.cse button.gsc-search-button,button.gsc-search-button{color:#fff;border:0;border-bottom:1px solid #000;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;background-color:#000;background-image:none;filter:none}.cse button.gsc-search-button:hover,button.gsc-search-button:hover{color:#333;border-color:#333;background-color:#333;background-image:none;filter:none}.hljs{display:block;overflow-x:auto;padding:.5em;background:#fff;font-family:Consolas,Monaco,YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ',Meiryo,monospace}.hljs-normal{font-weight:400}.hljs,.hljs-subst{color:#333}.hljs-comment{color:#969896}.hljs-doctag,.hljs-keyword,.hljs-meta-keyword,.hljs-name,.hljs-selector-tag{font-weight:700}.hljs-deletion,.hljs-quote,.hljs-selector-class,.hljs-selector-id,.hljs-string,.hljs-template-tag,.hljs-type{color:#f40065}.hljs-section,.hljs-title{color:#ff1744}.hljs-link,.hljs-regexp,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-symbol,.hljs-template-variable,.hljs-variable{color:#2979ff}.hljs-number{color:#009f85}.hljs-literal{color:#5f00d7}.hljs-addition,.hljs-attribute,.hljs-built_in,.hljs-bullet,.hljs-code{color:#2962ff}.hljs-meta{color:#304ffe}.hljs-meta-string{color:#4d99bf}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}::selection{background:rgba(255,40,147,.2)}::-moz-selection{background:rgba(255,40,147,.2)}.main a:hover,.main a:visited:hover,.navi a:hover{color:rgba(255,20,147)}.icon svg rect{fill:rgba(255,20,147)}</style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-106478577-1', 'auto');
+    </script>
+  </head>
+</html>
+<body>
+  <header>
+    <div class="icon"><a class="no-barba" href="https://tr.you84815.space/">
+        <svg xmlns="https://www.w3.org/2000/svg">
+          <rect width="16" height="16" fill="#e0e0e0"></rect>
+        </svg></a></div>
+    <div class="navi_toggle" onclick="toggleMenu()">
+      <svg id="menu_close" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+        <path d="M0 0h24v24H0z" fill="none"></path>
+      </svg>
+      <svg id="menu_open" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+      </svg>
+    </div>
+    <div class="title">is.js - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div>
+  </header>
+  <div class="wrapper">
+    <div class="navi">
+      <ul class="menu">
+        <li><a class="index" href="../index.html">Home</a></li>
+        <li><a class="introduction" href="../introduction.html">Introduction</a></li>
+        <li><span onclick="toggleNaviSubMenu('navi_typeChecks')">Type checks</span>
+          <ul class="hidden" id="navi_typeChecks">
+            <li><a href="../typeChecks/arguments.html">arguments()</a></li>
+            <li><a href="../typeChecks/array.html">array()</a></li>
+            <li><a href="../typeChecks/boolean.html">boolean()</a></li>
+            <li><a href="../typeChecks/date.html">date()</a></li>
+            <li><a href="../typeChecks/domNode.html">domNode()</a></li>
+            <li><a href="../typeChecks/error.html">error()</a></li>
+            <li><a href="../typeChecks/function.html">function()</a></li>
+            <li><a href="../typeChecks/nan.html">nan()</a></li>
+            <li><a href="../typeChecks/null.html">null()</a></li>
+            <li><a href="../typeChecks/number.html">number()</a></li>
+            <li><a href="../typeChecks/object.html">object()</a></li>
+            <li><a href="../typeChecks/json.html">json()</a></li>
+            <li><a href="../typeChecks/regexp.html">regexp()</a></li>
+            <li><a href="../typeChecks/string.html">string()</a></li>
+            <li><a href="../typeChecks/char.html">char()</a></li>
+            <li><a href="../typeChecks/undefined.html">undefined()</a></li>
+            <li><a href="../typeChecks/sameType.html">sameType()</a></li>
+            <li><a href="../typeChecks/windowObject.html">windowObject()</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleNaviSubMenu('navi_presenceChecks')">Presence checks</span>
+          <ul class="hidden" id="navi_presenceChecks">
+            <li><a href="../presenceChecks/empty.html">empty()</a></li>
+            <li><a href="../presenceChecks/existy.html">existy()</a></li>
+            <li><a href="../presenceChecks/truthy.html">truthy()</a></li>
+            <li><a href="../presenceChecks/falsy.html">falsy()</a></li>
+            <li><a href="../presenceChecks/space.html">space()</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleNaviSubMenu('navi_regExpChecks')">RegExp checks</span>
+          <ul class="hidden" id="navi_regExpChecks">
+            <li><a href="../regExpChecks/url.html">url()</a></li>
+            <li><a href="../regExpChecks/email.html">email()</a></li>
+            <li><a href="../regExpChecks/creditCard.html">creditCard()</a></li>
+            <li><a href="../regExpChecks/alphaNumeric.html">alphaNumeric()</a></li>
+            <li><a href="../regExpChecks/timeString.html">timeString()</a></li>
+            <li><a href="../regExpChecks/dateString.html">dateString()</a></li>
+            <li><a href="../regExpChecks/usZipCode.html">usZipCode()</a></li>
+            <li><a href="../regExpChecks/caPostalCode.html">caPostalCode()</a></li>
+            <li><a href="../regExpChecks/ukPostCode.html">ukPostCode()</a></li>
+            <li><a href="../regExpChecks/nanpPhone.html">nanpPhone()</a></li>
+            <li><a href="../regExpChecks/eppPhone.html">eppPhone()</a></li>
+            <li><a href="../regExpChecks/socialSecurityNumber.html">socialSecurityNumber()</a></li>
+            <li><a href="../regExpChecks/affirmative.html">affirmative()</a></li>
+            <li><a href="../regExpChecks/hexadecimal.html">hexadecimal()</a></li>
+            <li><a href="../regExpChecks/hexColor.html">hexColor()</a></li>
+            <li><a href="../regExpChecks/ip.html">ip()</a></li>
+            <li><a href="../regExpChecks/ipv4.html">ipv4()</a></li>
+            <li><a href="../regExpChecks/ipv6.html">ipv6()</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleNaviSubMenu('navi_stringChecks')">String checks</span>
+          <ul class="hidden" id="navi_stringChecks">
+            <li><a href="../stringChecks/include.html">include()</a></li>
+            <li><a href="../stringChecks/upperCase.html">upperCase()</a></li>
+            <li><a href="../stringChecks/lowerCase.html">lowerCase()</a></li>
+            <li><a href="../stringChecks/startWith.html">startWith()</a></li>
+            <li><a href="../stringChecks/endWith.html">endWith()</a></li>
+            <li><a href="../stringChecks/capitalized.html">capitalized()</a></li>
+            <li><a href="../stringChecks/palindrome.html">palindrome()</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleNaviSubMenu('navi_arithmeticChecks')">Arithmetic checks</span>
+          <ul class="hidden" id="navi_arithmeticChecks">
+            <li><a href="../arithmeticChecks/equal.html">equal()</a></li>
+            <li><a href="../arithmeticChecks/even.html">even()</a></li>
+            <li><a href="../arithmeticChecks/odd.html">odd()</a></li>
+            <li><a href="../arithmeticChecks/positive.html">positive()</a></li>
+            <li><a href="../arithmeticChecks/negative.html">negative()</a></li>
+            <li><a href="../arithmeticChecks/above.html">above()</a></li>
+            <li><a href="../arithmeticChecks/under.html">under()</a></li>
+            <li><a href="../arithmeticChecks/within.html">within()</a></li>
+            <li><a href="../arithmeticChecks/decimal.html">decimal()</a></li>
+            <li><a href="../arithmeticChecks/integer.html">integer()</a></li>
+            <li><a href="../arithmeticChecks/finite.html">finite()</a></li>
+            <li><a href="../arithmeticChecks/infinite.html">infinite()</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleNaviSubMenu('navi_objectChecks')">Object checks</span>
+          <ul class="hidden" id="navi_objectChecks">
+            <li><a href="../objectChecks/propertyCount.html">propertyCount()</a></li>
+            <li><a href="../objectChecks/propertyDefined.html">propertyDefined()</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleNaviSubMenu('navi_arrayChecks')">Array checks</span>
+          <ul class="hidden" id="navi_arrayChecks">
+            <li><a href="../arrayChecks/inArray.html">inArray()</a></li>
+            <li><a href="../arrayChecks/sorted.html">sorted()</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleNaviSubMenu('navi_environmentChecks')">Environment checks</span>
+          <ul class="hidden" id="navi_environmentChecks">
+            <li><a href="../environmentChecks/ie.html">ie()</a></li>
+            <li><a href="../environmentChecks/chrome.html">chrome()</a></li>
+            <li><a href="../environmentChecks/firefox.html">firefox()</a></li>
+            <li><a href="../environmentChecks/edge.html">edge()</a></li>
+            <li><a href="../environmentChecks/opera.html">opera()</a></li>
+            <li><a href="../environmentChecks/safari.html">safari()</a></li>
+            <li><a href="../environmentChecks/phantom.html">phantom()</a></li>
+            <li><a href="../environmentChecks/ios.html">ios()</a></li>
+            <li><a href="../environmentChecks/iphone.html">iphone()</a></li>
+            <li><a href="../environmentChecks/ipad.html">ipad()</a></li>
+            <li><a href="../environmentChecks/ipod.html">ipod()</a></li>
+            <li><a href="../environmentChecks/android.html">android()</a></li>
+            <li><a href="../environmentChecks/androidPhone.html">androidPhone()</a></li>
+            <li><a href="../environmentChecks/androidTablet.html">androidTablet()</a></li>
+            <li><a href="../environmentChecks/blackberry.html">blackberry()</a></li>
+            <li><a href="../environmentChecks/windowsPhone.html">windowsPhone()</a></li>
+            <li><a href="../environmentChecks/windowsTablet.html">windowsTablet()</a></li>
+            <li><a href="../environmentChecks/windows.html">windows()</a></li>
+            <li><a href="../environmentChecks/mac.html">mac()</a></li>
+            <li><a href="../environmentChecks/linux.html">linux()</a></li>
+            <li><a href="../environmentChecks/desktop.html">desktop()</a></li>
+            <li><a href="../environmentChecks/mobile.html">mobile()</a></li>
+            <li><a href="../environmentChecks/tablet.html">tablet()</a></li>
+            <li><a href="../environmentChecks/online.html">online()</a></li>
+            <li><a href="../environmentChecks/offline.html">offline()</a></li>
+            <li><a href="../environmentChecks/touchDevice.html">touchDevice()</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleNaviSubMenu('navi_timeChecks')">Time checks</span>
+          <ul id="navi_timeChecks">
+            <li><a href="../timeChecks/today.html">today()</a></li>
+            <li><a href="../timeChecks/yesterday.html">yesterday()</a></li>
+            <li><a href="../timeChecks/tomorrow.html">tomorrow()</a></li>
+            <li><a href="../timeChecks/past.html">past()</a></li>
+            <li><a href="../timeChecks/future.html">future()</a></li>
+            <li><a href="../timeChecks/day.html">day()</a></li>
+            <li><a href="../timeChecks/month.html">month()</a></li>
+            <li><a href="../timeChecks/year.html">year()</a></li>
+            <li><a href="../timeChecks/leapYear.html">leapYear()</a></li>
+            <li><a href="../timeChecks/weekend.html">weekend()</a></li>
+            <li><a href="../timeChecks/weekday.html">weekday()</a></li>
+            <li><a href="../timeChecks/inDateRange.html">inDateRange()</a></li>
+            <li><a href="../timeChecks/inLastWeek.html">inLastWeek()</a></li>
+            <li><a href="../timeChecks/inLastMonth.html">inLastMonth()</a></li>
+            <li><a href="../timeChecks/inLastYear.html">inLastYear()</a></li>
+            <li><a href="../timeChecks/inNextWeek.html">inNextWeek()</a></li>
+            <li><a href="../timeChecks/inNextMonth.html">inNextMonth()</a></li>
+            <li><a href="../timeChecks/inNextYear.html">inNextYear()</a></li>
+            <li><a href="../timeChecks/quarterOfYear.html">quarterOfYear()</a></li>
+            <li><a class="active" href="../timeChecks/dayLightSavingTime.html">dayLightSavingTime()</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleNaviSubMenu('navi_configurationMethods')">Configuration methods</span>
+          <ul class="hidden" id="navi_configurationMethods">
+            <li><a href="../configurationMethods/setNamespace.html">setNamespace()</a></li>
+            <li><a href="../configurationMethods/setRegexp.html">setRegexp()</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="barba-wrapper">
+      <div class="barba-container">
+        <div class="main">
+          <h1>dayLightSavingTime()</h1>
+          <h2>is.dayLightSavingTime(value:date)</h2>
+          <p>渡された日付がサマータイムの期間内かどうかを判定します。</p>
+          <dl>
+            <dt><b>インターフェース:</b></dt>
+            <dd><code>not</code></dd>
+          </dl>
+          <pre><code class="js">// トルコのタイムゾーンの場合
+var january1 = new Date('01/01/2015');
+var june1 = new Date('06/01/2015');
+ 
+is.dayLightSavingTime(june1);
+=> true
+ 
+is.dayLightSavingTime(january1);
+=> false
+ 
+is.not.dayLightSavingTime(january1);
+=> true</code></pre><br>
+          <h3>デモ</h3>
+          <p>変数を判定して<code>console.log</code>を出力します。
+            <blockquote>※タイムゾーンが(UTC+09:00) 大阪、札幌、東京の場合、<code>dayLightSavingTime</code>が<code>false</code>になります。<br>確認する場合はタイムゾーンを変更(UTC-08:00 太平洋標準時等)してから確認してください。</blockquote>
+          </p>
+          <h4>JavaScript</h4>
+          <pre><code class="js">var val   = new Date('06/01/2015');
+if (is.dayLightSavingTime(val)) {
+  console.log('2015/06/01はサマータイムです。');
+} else {
+  console.log('2015/06/01はサマータイムではありません。');
+}</code></pre><br>
+          <script class="load">
+            createObj = function() {
+              var val   = new Date('06/01/2015');
+              if (is.dayLightSavingTime(val)) {
+                console.log('2015/06/01はサマータイムです。');
+              } else {
+                console.log('2015/06/01はサマータイムではありません。');
+              }
+            };
+          </script>
+          <div class="license">
+            <p>
+              &copy; 2014-2016
+               Aras Atasaygin Released under the <a href="https://github.com/arasatasaygin/is.js/blob/master/LICENSE">MIT license</a>
+            </p>
+            <p>このコンテンツはAras Atasaygin(arasatasaygin)による<a href="https://github.com/arasatasaygin/is.js">is.jsドキュメント</a>を翻訳/改変したものです。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer><span>
+       &copy; 
+      <script>document.write((new Date()).getFullYear());</script> tobijibu</span></footer>
+  <noscript id="deferred-styles">
+  </noscript>
+  <script>
+    var loadDeferredStyles = function() {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+    
+  </script>
+  <script src="../js/main.js"></script>
+  <script src="../js/is.min.js"></script>
+</body>
