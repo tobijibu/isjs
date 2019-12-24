@@ -1,10 +1,220 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>caPostalCode() | is.js - にほんご。</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta property="og:title" content="caPostalCode() | is.js - にほんご。"><meta property="og:url"><meta property="og:type" content="article"><link rel="icon" href="https://tr.you84815.space/isjs/favicon.ico"><link rel="stylesheet" href="../css/main.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-106478577-1', 'auto');</script></head><body><div id="container"><header><div class="icon"><a class="no-barba" href="https://tr.you84815.space/"><svg width="16" height="16"><rect width="16" height="16" fill="#e0e0e0"></rect></svg></a></div><div class="navi_toggle" onclick="toggleMenu()"><svg id="menu_close" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg id="menu_open" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="title">is.js - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div></header><div class="navi" id="navi"><ul class="menu"><li><a class="index" href="../index.html">Home</a></li><li><a class="introduction" href="../introduction.html">Introduction</a></li><li><span onclick="toggleNaviSubMenu('navi_typeChecks')">Type checks</span><ul class="hidden" id="navi_typeChecks"><li><a href="../typeChecks/arguments.html">arguments()</a></li><li><a href="../typeChecks/array.html">array()</a></li><li><a href="../typeChecks/boolean.html">boolean()</a></li><li><a href="../typeChecks/date.html">date()</a></li><li><a href="../typeChecks/domNode.html">domNode()</a></li><li><a href="../typeChecks/error.html">error()</a></li><li><a href="../typeChecks/function.html">function()</a></li><li><a href="../typeChecks/nan.html">nan()</a></li><li><a href="../typeChecks/null.html">null()</a></li><li><a href="../typeChecks/number.html">number()</a></li><li><a href="../typeChecks/object.html">object()</a></li><li><a href="../typeChecks/json.html">json()</a></li><li><a href="../typeChecks/regexp.html">regexp()</a></li><li><a href="../typeChecks/string.html">string()</a></li><li><a href="../typeChecks/char.html">char()</a></li><li><a href="../typeChecks/undefined.html">undefined()</a></li><li><a href="../typeChecks/sameType.html">sameType()</a></li><li><a href="../typeChecks/windowObject.html">windowObject()</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_presenceChecks')">Presence checks</span><ul class="hidden" id="navi_presenceChecks"><li><a href="../presenceChecks/empty.html">empty()</a></li><li><a href="../presenceChecks/existy.html">existy()</a></li><li><a href="../presenceChecks/truthy.html">truthy()</a></li><li><a href="../presenceChecks/falsy.html">falsy()</a></li><li><a href="../presenceChecks/space.html">space()</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_regExpChecks')">RegExp checks</span><ul id="navi_regExpChecks"><li><a href="../regExpChecks/url.html">url()</a></li><li><a href="../regExpChecks/email.html">email()</a></li><li><a href="../regExpChecks/creditCard.html">creditCard()</a></li><li><a href="../regExpChecks/alphaNumeric.html">alphaNumeric()</a></li><li><a href="../regExpChecks/timeString.html">timeString()</a></li><li><a href="../regExpChecks/dateString.html">dateString()</a></li><li><a href="../regExpChecks/usZipCode.html">usZipCode()</a></li><li><a class="active" href="../regExpChecks/caPostalCode.html">caPostalCode()</a></li><li><a href="../regExpChecks/ukPostCode.html">ukPostCode()</a></li><li><a href="../regExpChecks/nanpPhone.html">nanpPhone()</a></li><li><a href="../regExpChecks/eppPhone.html">eppPhone()</a></li><li><a href="../regExpChecks/socialSecurityNumber.html">socialSecurityNumber()</a></li><li><a href="../regExpChecks/affirmative.html">affirmative()</a></li><li><a href="../regExpChecks/hexadecimal.html">hexadecimal()</a></li><li><a href="../regExpChecks/hexColor.html">hexColor()</a></li><li><a href="../regExpChecks/ip.html">ip()</a></li><li><a href="../regExpChecks/ipv4.html">ipv4()</a></li><li><a href="../regExpChecks/ipv6.html">ipv6()</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_stringChecks')">String checks</span><ul class="hidden" id="navi_stringChecks"><li><a href="../stringChecks/include.html">include()</a></li><li><a href="../stringChecks/upperCase.html">upperCase()</a></li><li><a href="../stringChecks/lowerCase.html">lowerCase()</a></li><li><a href="../stringChecks/startWith.html">startWith()</a></li><li><a href="../stringChecks/endWith.html">endWith()</a></li><li><a href="../stringChecks/capitalized.html">capitalized()</a></li><li><a href="../stringChecks/palindrome.html">palindrome()</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_arithmeticChecks')">Arithmetic checks</span><ul class="hidden" id="navi_arithmeticChecks"><li><a href="../arithmeticChecks/equal.html">equal()</a></li><li><a href="../arithmeticChecks/even.html">even()</a></li><li><a href="../arithmeticChecks/odd.html">odd()</a></li><li><a href="../arithmeticChecks/positive.html">positive()</a></li><li><a href="../arithmeticChecks/negative.html">negative()</a></li><li><a href="../arithmeticChecks/above.html">above()</a></li><li><a href="../arithmeticChecks/under.html">under()</a></li><li><a href="../arithmeticChecks/within.html">within()</a></li><li><a href="../arithmeticChecks/decimal.html">decimal()</a></li><li><a href="../arithmeticChecks/integer.html">integer()</a></li><li><a href="../arithmeticChecks/finite.html">finite()</a></li><li><a href="../arithmeticChecks/infinite.html">infinite()</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_objectChecks')">Object checks</span><ul class="hidden" id="navi_objectChecks"><li><a href="../objectChecks/propertyCount.html">propertyCount()</a></li><li><a href="../objectChecks/propertyDefined.html">propertyDefined()</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_arrayChecks')">Array checks</span><ul class="hidden" id="navi_arrayChecks"><li><a href="../arrayChecks/inArray.html">inArray()</a></li><li><a href="../arrayChecks/sorted.html">sorted()</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_environmentChecks')">Environment checks</span><ul class="hidden" id="navi_environmentChecks"><li><a href="../environmentChecks/ie.html">ie()</a></li><li><a href="../environmentChecks/chrome.html">chrome()</a></li><li><a href="../environmentChecks/firefox.html">firefox()</a></li><li><a href="../environmentChecks/edge.html">edge()</a></li><li><a href="../environmentChecks/opera.html">opera()</a></li><li><a href="../environmentChecks/safari.html">safari()</a></li><li><a href="../environmentChecks/phantom.html">phantom()</a></li><li><a href="../environmentChecks/ios.html">ios()</a></li><li><a href="../environmentChecks/iphone.html">iphone()</a></li><li><a href="../environmentChecks/ipad.html">ipad()</a></li><li><a href="../environmentChecks/ipod.html">ipod()</a></li><li><a href="../environmentChecks/android.html">android()</a></li><li><a href="../environmentChecks/androidPhone.html">androidPhone()</a></li><li><a href="../environmentChecks/androidTablet.html">androidTablet()</a></li><li><a href="../environmentChecks/blackberry.html">blackberry()</a></li><li><a href="../environmentChecks/windowsPhone.html">windowsPhone()</a></li><li><a href="../environmentChecks/windowsTablet.html">windowsTablet()</a></li><li><a href="../environmentChecks/windows.html">windows()</a></li><li><a href="../environmentChecks/mac.html">mac()</a></li><li><a href="../environmentChecks/linux.html">linux()</a></li><li><a href="../environmentChecks/desktop.html">desktop()</a></li><li><a href="../environmentChecks/mobile.html">mobile()</a></li><li><a href="../environmentChecks/tablet.html">tablet()</a></li><li><a href="../environmentChecks/online.html">online()</a></li><li><a href="../environmentChecks/offline.html">offline()</a></li><li><a href="../environmentChecks/touchDevice.html">touchDevice()</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_timeChecks')">Time checks</span><ul class="hidden" id="navi_timeChecks"><li><a href="../timeChecks/today.html">today()</a></li><li><a href="../timeChecks/yesterday.html">yesterday()</a></li><li><a href="../timeChecks/tomorrow.html">tomorrow()</a></li><li><a href="../timeChecks/past.html">past()</a></li><li><a href="../timeChecks/future.html">future()</a></li><li><a href="../timeChecks/day.html">day()</a></li><li><a href="../timeChecks/month.html">month()</a></li><li><a href="../timeChecks/year.html">year()</a></li><li><a href="../timeChecks/leapYear.html">leapYear()</a></li><li><a href="../timeChecks/weekend.html">weekend()</a></li><li><a href="../timeChecks/weekday.html">weekday()</a></li><li><a href="../timeChecks/inDateRange.html">inDateRange()</a></li><li><a href="../timeChecks/inLastWeek.html">inLastWeek()</a></li><li><a href="../timeChecks/inLastMonth.html">inLastMonth()</a></li><li><a href="../timeChecks/inLastYear.html">inLastYear()</a></li><li><a href="../timeChecks/inNextWeek.html">inNextWeek()</a></li><li><a href="../timeChecks/inNextMonth.html">inNextMonth()</a></li><li><a href="../timeChecks/inNextYear.html">inNextYear()</a></li><li><a href="../timeChecks/quarterOfYear.html">quarterOfYear()</a></li><li><a href="../timeChecks/dayLightSavingTime.html">dayLightSavingTime()</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_configurationMethods')">Configuration methods</span><ul class="hidden" id="navi_configurationMethods"><li><a href="../configurationMethods/setNamespace.html">setNamespace()</a></li><li><a href="../configurationMethods/setRegexp.html">setRegexp()</a></li></ul></li></ul></div><div id="content"><div id="main"><div id="barba-wrapper"><div class="barba-container"><h1>caPostalCode()</h1><div id="update_date"><span>更新日: 2018.09.14
-</span></div><h2>is.caPostalCode(value:any)</h2><p>渡された値がカナダの郵便番号形式かどうかを判定します。</p><dl><dt><b>インターフェース:</b></dt><dd><code>not</code>, <code>all</code>, <code>any</code></dd></dl><pre><code>is.caPostalCode(<span class="hljs-string">'L8V3Y1'</span>);
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>caPostalCode() | is.js - にほんご。</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="caPostalCode() | is.js - にほんご。">
+    <meta property="og:url">
+    <meta property="og:type" content="article">
+    <link rel="icon" href="https://tr.you84815.space/isjs/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link id="theme_style" rel="stylesheet" type="text/css" href="">
+    <script id="srcTheme" src="../js/toggleTheme.js" data-dir="isjs"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-106478577-1', 'auto');
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="icon"><a class="no-barba" href="https://tr.you84815.space/">
+            <svg width="16" height="16">
+              <rect width="16" height="16" fill="#e0e0e0"></rect>
+            </svg></a></div>
+        <div class="navi_toggle" onclick="toggleMenu()">
+          <svg id="menu_close" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+            <path d="M0 0h24v24H0z" fill="none"></path>
+          </svg>
+          <svg id="menu_open" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </div>
+        <div class="title">is.js - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div><span id="toggleTheme">
+          <svg role="img" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"></path>
+          </svg></span>
+      </header>
+      <div class="navi" id="navi">
+        <ul class="menu">
+          <li><a class="index" href="../index.html">Home</a></li>
+          <li><a class="introduction" href="../introduction.html">Introduction</a></li>
+          <li><span onclick="toggleNaviSubMenu('navi_typeChecks')">Type checks</span>
+            <ul class="hidden" id="navi_typeChecks">
+              <li><a href="../typeChecks/arguments.html">arguments()</a></li>
+              <li><a href="../typeChecks/array.html">array()</a></li>
+              <li><a href="../typeChecks/boolean.html">boolean()</a></li>
+              <li><a href="../typeChecks/date.html">date()</a></li>
+              <li><a href="../typeChecks/domNode.html">domNode()</a></li>
+              <li><a href="../typeChecks/error.html">error()</a></li>
+              <li><a href="../typeChecks/function.html">function()</a></li>
+              <li><a href="../typeChecks/nan.html">nan()</a></li>
+              <li><a href="../typeChecks/null.html">null()</a></li>
+              <li><a href="../typeChecks/number.html">number()</a></li>
+              <li><a href="../typeChecks/object.html">object()</a></li>
+              <li><a href="../typeChecks/json.html">json()</a></li>
+              <li><a href="../typeChecks/regexp.html">regexp()</a></li>
+              <li><a href="../typeChecks/string.html">string()</a></li>
+              <li><a href="../typeChecks/char.html">char()</a></li>
+              <li><a href="../typeChecks/undefined.html">undefined()</a></li>
+              <li><a href="../typeChecks/sameType.html">sameType()</a></li>
+              <li><a href="../typeChecks/windowObject.html">windowObject()</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_presenceChecks')">Presence checks</span>
+            <ul class="hidden" id="navi_presenceChecks">
+              <li><a href="../presenceChecks/empty.html">empty()</a></li>
+              <li><a href="../presenceChecks/existy.html">existy()</a></li>
+              <li><a href="../presenceChecks/truthy.html">truthy()</a></li>
+              <li><a href="../presenceChecks/falsy.html">falsy()</a></li>
+              <li><a href="../presenceChecks/space.html">space()</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_regExpChecks')">RegExp checks</span>
+            <ul id="navi_regExpChecks">
+              <li><a href="../regExpChecks/url.html">url()</a></li>
+              <li><a href="../regExpChecks/email.html">email()</a></li>
+              <li><a href="../regExpChecks/creditCard.html">creditCard()</a></li>
+              <li><a href="../regExpChecks/alphaNumeric.html">alphaNumeric()</a></li>
+              <li><a href="../regExpChecks/timeString.html">timeString()</a></li>
+              <li><a href="../regExpChecks/dateString.html">dateString()</a></li>
+              <li><a href="../regExpChecks/usZipCode.html">usZipCode()</a></li>
+              <li><a class="active" href="../regExpChecks/caPostalCode.html">caPostalCode()</a></li>
+              <li><a href="../regExpChecks/ukPostCode.html">ukPostCode()</a></li>
+              <li><a href="../regExpChecks/nanpPhone.html">nanpPhone()</a></li>
+              <li><a href="../regExpChecks/eppPhone.html">eppPhone()</a></li>
+              <li><a href="../regExpChecks/socialSecurityNumber.html">socialSecurityNumber()</a></li>
+              <li><a href="../regExpChecks/affirmative.html">affirmative()</a></li>
+              <li><a href="../regExpChecks/hexadecimal.html">hexadecimal()</a></li>
+              <li><a href="../regExpChecks/hexColor.html">hexColor()</a></li>
+              <li><a href="../regExpChecks/ip.html">ip()</a></li>
+              <li><a href="../regExpChecks/ipv4.html">ipv4()</a></li>
+              <li><a href="../regExpChecks/ipv6.html">ipv6()</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_stringChecks')">String checks</span>
+            <ul class="hidden" id="navi_stringChecks">
+              <li><a href="../stringChecks/include.html">include()</a></li>
+              <li><a href="../stringChecks/upperCase.html">upperCase()</a></li>
+              <li><a href="../stringChecks/lowerCase.html">lowerCase()</a></li>
+              <li><a href="../stringChecks/startWith.html">startWith()</a></li>
+              <li><a href="../stringChecks/endWith.html">endWith()</a></li>
+              <li><a href="../stringChecks/capitalized.html">capitalized()</a></li>
+              <li><a href="../stringChecks/palindrome.html">palindrome()</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_arithmeticChecks')">Arithmetic checks</span>
+            <ul class="hidden" id="navi_arithmeticChecks">
+              <li><a href="../arithmeticChecks/equal.html">equal()</a></li>
+              <li><a href="../arithmeticChecks/even.html">even()</a></li>
+              <li><a href="../arithmeticChecks/odd.html">odd()</a></li>
+              <li><a href="../arithmeticChecks/positive.html">positive()</a></li>
+              <li><a href="../arithmeticChecks/negative.html">negative()</a></li>
+              <li><a href="../arithmeticChecks/above.html">above()</a></li>
+              <li><a href="../arithmeticChecks/under.html">under()</a></li>
+              <li><a href="../arithmeticChecks/within.html">within()</a></li>
+              <li><a href="../arithmeticChecks/decimal.html">decimal()</a></li>
+              <li><a href="../arithmeticChecks/integer.html">integer()</a></li>
+              <li><a href="../arithmeticChecks/finite.html">finite()</a></li>
+              <li><a href="../arithmeticChecks/infinite.html">infinite()</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_objectChecks')">Object checks</span>
+            <ul class="hidden" id="navi_objectChecks">
+              <li><a href="../objectChecks/propertyCount.html">propertyCount()</a></li>
+              <li><a href="../objectChecks/propertyDefined.html">propertyDefined()</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_arrayChecks')">Array checks</span>
+            <ul class="hidden" id="navi_arrayChecks">
+              <li><a href="../arrayChecks/inArray.html">inArray()</a></li>
+              <li><a href="../arrayChecks/sorted.html">sorted()</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_environmentChecks')">Environment checks</span>
+            <ul class="hidden" id="navi_environmentChecks">
+              <li><a href="../environmentChecks/ie.html">ie()</a></li>
+              <li><a href="../environmentChecks/chrome.html">chrome()</a></li>
+              <li><a href="../environmentChecks/firefox.html">firefox()</a></li>
+              <li><a href="../environmentChecks/edge.html">edge()</a></li>
+              <li><a href="../environmentChecks/opera.html">opera()</a></li>
+              <li><a href="../environmentChecks/safari.html">safari()</a></li>
+              <li><a href="../environmentChecks/phantom.html">phantom()</a></li>
+              <li><a href="../environmentChecks/ios.html">ios()</a></li>
+              <li><a href="../environmentChecks/iphone.html">iphone()</a></li>
+              <li><a href="../environmentChecks/ipad.html">ipad()</a></li>
+              <li><a href="../environmentChecks/ipod.html">ipod()</a></li>
+              <li><a href="../environmentChecks/android.html">android()</a></li>
+              <li><a href="../environmentChecks/androidPhone.html">androidPhone()</a></li>
+              <li><a href="../environmentChecks/androidTablet.html">androidTablet()</a></li>
+              <li><a href="../environmentChecks/blackberry.html">blackberry()</a></li>
+              <li><a href="../environmentChecks/windowsPhone.html">windowsPhone()</a></li>
+              <li><a href="../environmentChecks/windowsTablet.html">windowsTablet()</a></li>
+              <li><a href="../environmentChecks/windows.html">windows()</a></li>
+              <li><a href="../environmentChecks/mac.html">mac()</a></li>
+              <li><a href="../environmentChecks/linux.html">linux()</a></li>
+              <li><a href="../environmentChecks/desktop.html">desktop()</a></li>
+              <li><a href="../environmentChecks/mobile.html">mobile()</a></li>
+              <li><a href="../environmentChecks/tablet.html">tablet()</a></li>
+              <li><a href="../environmentChecks/online.html">online()</a></li>
+              <li><a href="../environmentChecks/offline.html">offline()</a></li>
+              <li><a href="../environmentChecks/touchDevice.html">touchDevice()</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_timeChecks')">Time checks</span>
+            <ul class="hidden" id="navi_timeChecks">
+              <li><a href="../timeChecks/today.html">today()</a></li>
+              <li><a href="../timeChecks/yesterday.html">yesterday()</a></li>
+              <li><a href="../timeChecks/tomorrow.html">tomorrow()</a></li>
+              <li><a href="../timeChecks/past.html">past()</a></li>
+              <li><a href="../timeChecks/future.html">future()</a></li>
+              <li><a href="../timeChecks/day.html">day()</a></li>
+              <li><a href="../timeChecks/month.html">month()</a></li>
+              <li><a href="../timeChecks/year.html">year()</a></li>
+              <li><a href="../timeChecks/leapYear.html">leapYear()</a></li>
+              <li><a href="../timeChecks/weekend.html">weekend()</a></li>
+              <li><a href="../timeChecks/weekday.html">weekday()</a></li>
+              <li><a href="../timeChecks/inDateRange.html">inDateRange()</a></li>
+              <li><a href="../timeChecks/inLastWeek.html">inLastWeek()</a></li>
+              <li><a href="../timeChecks/inLastMonth.html">inLastMonth()</a></li>
+              <li><a href="../timeChecks/inLastYear.html">inLastYear()</a></li>
+              <li><a href="../timeChecks/inNextWeek.html">inNextWeek()</a></li>
+              <li><a href="../timeChecks/inNextMonth.html">inNextMonth()</a></li>
+              <li><a href="../timeChecks/inNextYear.html">inNextYear()</a></li>
+              <li><a href="../timeChecks/quarterOfYear.html">quarterOfYear()</a></li>
+              <li><a href="../timeChecks/dayLightSavingTime.html">dayLightSavingTime()</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_configurationMethods')">Configuration methods</span>
+            <ul class="hidden" id="navi_configurationMethods">
+              <li><a href="../configurationMethods/setNamespace.html">setNamespace()</a></li>
+              <li><a href="../configurationMethods/setRegexp.html">setRegexp()</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="main">
+          <div id="barba-wrapper">
+            <div class="barba-container">
+              <h1>caPostalCode()</h1>
+              <div id="update_date"><span>更新日: 2018.09.14
+</span>
+              </div>
+              <h2>is.caPostalCode(value:any)</h2>
+              <p>渡された値がカナダの郵便番号形式かどうかを判定します。</p>
+              <dl>
+                <dt><b>インターフェース:</b></dt>
+                <dd><code>not</code>, <code>all</code>, <code>any</code></dd>
+              </dl>
+              <pre><code>is.caPostalCode(<span class="hljs-string">'L8V3Y1'</span>);
 =&gt; <span class="hljs-literal">true</span>
 
 is.caPostalCode(<span class="hljs-string">'L8V 3Y1'</span>);
@@ -24,13 +234,40 @@ is.any.caPostalCode(<span class="hljs-string">'L8V3Y1'</span>, <span class="hljs
 
 <span class="hljs-comment">// 'all'と'any'は、配列を受け取ることができます。</span>
 is.all.caPostalCode([<span class="hljs-string">'L8V3Y1'</span>, <span class="hljs-string">'123'</span>]);
-=&gt; <span class="hljs-literal">false</span></code></pre><br><h3>デモ</h3><p>変数を判定して<code>console.log</code>を出力します。</p><h5>JavaScript</h5><pre><code><span class="hljs-keyword">var</span> val = <span class="hljs-string">'L8V3Y1'</span>;
+=&gt; <span class="hljs-literal">false</span></code></pre><br>
+              <h3>デモ</h3>
+              <p>変数を判定して<code>console.log</code>を出力します。</p>
+              <h5>JavaScript</h5>
+              <pre><code><span class="hljs-keyword">var</span> val = <span class="hljs-string">'L8V3Y1'</span>;
 <span class="hljs-keyword">if</span> (is.caPostalCode(val)) {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"L8V3Y1はカナダの郵便番号です。"</span>);
-}</code></pre><br><script class="load">createObj = function() {
-  var val = 'L8V3Y1';
-  if (is.caPostalCode(val)) {
-    console.log("L8V3Y1はカナダの郵便番号です。");
-  }
-};</script><br><div class="license"><p>&copy; 2014-2016
- Aras Atasaygin Released under the <a href="https://github.com/arasatasaygin/is.js/blob/master/LICENSE">MIT license</a></p><p>このコンテンツはAras Atasaygin(arasatasaygin)による<a href="https://github.com/arasatasaygin/is.js">is.jsドキュメント</a>を翻訳/改変したものです。</p></div></div></div></div></div><footer><span> &copy; <span id="copy_year">2017</span> tobijibu</span></footer></div><noscript id="deferred-styles"><link href="../css/lazy.css" rel="stylesheet"></noscript><script src="../js/main.js" defer></script><script src="../js/is.min.js"></script><div id="src" hidden></div></body></html>
+}</code></pre><br>
+              <script class="load">
+                createObj = function() {
+                  var val = 'L8V3Y1';
+                  if (is.caPostalCode(val)) {
+                    console.log("L8V3Y1はカナダの郵便番号です。");
+                  }
+                };
+              </script><br>
+              <div class="license">
+                <p>
+                  &copy; 2014-2016
+                   Aras Atasaygin Released under the <a href="https://github.com/arasatasaygin/is.js/blob/master/LICENSE">MIT license</a>
+                </p>
+                <p>このコンテンツはAras Atasaygin(arasatasaygin)による<a href="https://github.com/arasatasaygin/is.js">is.jsドキュメント</a>を翻訳/改変したものです。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer><span>&copy; <span id="copy_year">2017</span> tobijibu</span></footer>
+    </div>
+    <noscript id="deferred-styles">
+      <link href="../css/lazy.css" rel="stylesheet">
+    </noscript>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/is.min.js"></script>
+    <div id="src" hidden></div>
+  </body>
+</html>
